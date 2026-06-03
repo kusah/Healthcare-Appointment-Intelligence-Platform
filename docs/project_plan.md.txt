@@ -1,0 +1,113 @@
+# Healthcare Appointment Intelligence Platform
+
+## Objective
+Analyze healthcare appointment behavior and predict patient no-shows.
+
+## Dataset
+Medical Appointment No-Show Dataset
+Records: 110,527
+
+## Tools
+- MySQL
+- Python
+- Pandas
+- Flask
+- Power BI
+- Scikit-Learn
+
+## KPIs
+- No-show Rate
+- Total Patients
+- Gender Distribution
+- Neighbourhood Analysis
+- SMS Effectiveness
+
+## Future Features
+- Patient Management System
+- Power BI Dashboard
+- No-show Prediction Model
+
+
+
+## Day 1 Findings
+
+- Total Patients: 62,299
+- No-Show Rate: 20.19%
+- Female Appointments: 71,840
+- Male Appointments: 38,687
+
+Observation:
+Female patients account for a significantly higher proportion of appointments than male patients.
+
+
+
+# Day 2 Progress Report
+
+## Objective
+Perform data quality assessment and exploratory data analysis on healthcare appointment data.
+
+## Tasks Completed
+
+### 1. Data Quality Analysis
+- Checked missing values in key columns:
+  - PatientId
+  - Gender
+  - Age
+- Result: No missing values found.
+
+### 2. Age Analysis
+- Minimum Age: -1
+- Maximum Age: 115
+- Average Age: 37.09
+
+### 3. Outlier Detection
+- Identified 8 records with invalid age values.
+- Outlier Percentage: 0.0072%
+- Created a cleaned analytical view:
+  appointments_clean
+
+### 4. No-Show Analysis
+- Overall No-Show Rate: 20.19%
+
+### 5. Gender Analysis
+- Female Appointments: 71,840
+- Male Appointments: 38,687
+
+### 6. SMS Effectiveness Analysis
+Findings:
+- SMS Received = 27.57% No-Show Rate
+- SMS Not Received = 16.70% No-Show Rate
+
+Observation:
+Patients receiving SMS reminders showed a higher no-show rate, indicating SMS reminders may be targeted toward higher-risk patients.
+
+### 7. Medical Condition Analysis
+
+#### Diabetes
+- Total Diabetic Appointments: 7,943
+- No-Shows: 1,430
+
+#### Hypertension
+- Total Hypertensive Appointments: 21,801
+- No-Shows: 3,772
+
+### 8. Neighbourhood Analysis
+Top Neighbourhoods:
+1. JARDIM CAMBURI
+2. MARIA ORTIZ
+3. RESISTÊNCIA
+4. JARDIM DA PENHA
+5. ITARARÉ
+
+## Deliverables
+- SQL Queries Added
+- Data Quality Report
+- Clean Analytical View Created
+- Business Insights Generated
+
+## Next Steps (Day 3)
+- Age Group Analysis
+- Gender vs No-Show Rate
+- Scholarship Impact Analysis
+- Top No-Show Neighbourhoods
+- Power BI Dashboard Development

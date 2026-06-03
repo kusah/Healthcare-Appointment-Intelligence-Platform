@@ -1,0 +1,216 @@
+# Healthcare Appointment Intelligence Platform
+
+## Abstract
+
+Healthcare organizations frequently face operational challenges due to missed patient appointments. These missed appointments result in resource wastage, scheduling inefficiencies, and reduced quality of healthcare services. This project analyzes healthcare appointment data to identify patterns associated with patient no-shows and generate actionable insights for hospital management.
+
+The project utilizes SQL, Python, and data analytics techniques to perform data cleaning, exploratory data analysis, and business intelligence reporting. A cleaned analytical dataset was created to support accurate decision-making and future predictive modeling.
+
+---
+
+# 1. Introduction
+
+Patient no-shows represent a significant challenge in healthcare systems worldwide. Understanding the factors influencing appointment attendance can help healthcare providers improve scheduling efficiency and optimize resource allocation.
+
+This project aims to analyze appointment records and identify key factors contributing to missed appointments.
+
+---
+
+# 2. Objectives
+
+* Analyze healthcare appointment data.
+* Calculate patient no-show rates.
+* Perform data quality assessment.
+* Identify demographic patterns.
+* Study the impact of medical conditions.
+* Evaluate SMS reminder effectiveness.
+* Develop business intelligence insights.
+* Prepare data for dashboard development and predictive analytics.
+
+---
+
+# 3. Tools and Technologies
+
+* MySQL
+* SQL
+* Python
+* Pandas
+* SQLAlchemy
+* Power BI
+* Git & GitHub
+
+---
+
+# 4. Dataset Description
+
+Dataset Name:
+Medical Appointment No-Show Dataset
+
+Total Records:
+110,527
+
+Key Attributes:
+
+* PatientId
+* AppointmentID
+* Gender
+* Age
+* Neighbourhood
+* Scholarship
+* Hipertension
+* Diabetes
+* Alcoholism
+* Handcap
+* SMS_received
+* No_show
+
+---
+
+# 5. Database Design
+
+Database Name:
+healthcare_db
+
+Main Table:
+appointments_raw
+
+Analytical View:
+appointments_clean
+
+Purpose of Analytical View:
+To exclude invalid age records while preserving raw data integrity.
+
+---
+
+# 6. Data Quality Assessment
+
+## Missing Values Analysis
+
+| Column    | Missing Values |
+| --------- | -------------- |
+| PatientId | 0              |
+| Gender    | 0              |
+| Age       | 0              |
+
+Observation:
+No missing values were identified in critical analytical columns.
+
+---
+
+## Age Analysis
+
+Minimum Age: -1
+
+Maximum Age: 115
+
+Average Age: 37.09
+
+Observation:
+Several age values exceeded acceptable ranges.
+
+---
+
+## Outlier Analysis
+
+Outlier Records: 8
+
+Outlier Percentage: 0.0072%
+
+Action Taken:
+Created a cleaned analytical view filtering ages outside the range of 0–100.
+
+---
+
+# 7. Exploratory Data Analysis
+
+## No-Show Rate
+
+Overall No-Show Rate:
+20.19%
+
+Observation:
+Approximately one out of every five appointments resulted in a no-show.
+
+---
+
+## Gender Distribution
+
+Female Appointments:
+71,840
+
+Male Appointments:
+38,687
+
+Observation:
+Female patients account for a significantly larger proportion of appointments.
+
+---
+
+## SMS Reminder Analysis
+
+| SMS Received | No-Show Rate |
+| ------------ | ------------ |
+| Yes          | 27.57%       |
+| No           | 16.70%       |
+
+Observation:
+Patients receiving SMS reminders exhibited a higher no-show rate. This may indicate that reminder messages are targeted toward high-risk patients rather than causing missed appointments.
+
+---
+
+## Diabetes Analysis
+
+Total Diabetic Appointments:
+7,943
+
+Diabetic No-Shows:
+1,430
+
+---
+
+## Hypertension Analysis
+
+Total Hypertensive Appointments:
+21,801
+
+Hypertensive No-Shows:
+3,772
+
+---
+
+## Top Neighbourhoods
+
+* Jardim Camburi
+* Maria Ortiz
+* Resistência
+* Jardim da Penha
+* Itararé
+
+Observation:
+These neighbourhoods contribute the highest appointment volumes and require further attendance analysis.
+
+---
+
+# 8. Business Insights
+
+* No-show rate remains a significant operational challenge.
+* Female patients represent the majority of appointments.
+* Data quality is excellent with minimal outliers.
+* Certain neighbourhoods contribute disproportionately to appointment volumes.
+* Reminder strategies require deeper investigation.
+
+---
+
+# 9. Future Enhancements
+
+* Power BI Interactive Dashboard
+* Machine Learning No-Show Prediction Model
+* Flask-based Healthcare Management Portal
+* Real-Time Appointment Monitoring System
+* Predictive Analytics Dashboard
+
+---
+
+# 10. Conclusion
+
+The Healthcare Appointment Intelligence Platform successfully analyzed healthcare appointment records and identified key attendance patterns. The project demonstrated practical applications of SQL, Python, and business intelligence techniques in healthcare analytics. The findings provide a foundation for future predictive modeling and operational improvements aimed at reducing appointment no-show rates.
