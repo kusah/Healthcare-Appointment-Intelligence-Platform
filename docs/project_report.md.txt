@@ -214,3 +214,40 @@ These neighbourhoods contribute the highest appointment volumes and require furt
 # 10. Conclusion
 
 The Healthcare Appointment Intelligence Platform successfully analyzed healthcare appointment records and identified key attendance patterns. The project demonstrated practical applications of SQL, Python, and business intelligence techniques in healthcare analytics. The findings provide a foundation for future predictive modeling and operational improvements aimed at reducing appointment no-show rates.
+
+
+# Day 3 Analysis
+
+- Age Group Analysis
+- Gender No-Show Analysis
+- Scholarship Impact
+- Top No-Show Neighbourhoods
+
+Objective:
+Identify demographic and geographic factors influencing appointment attendance.
+
+
+# Day 3 Analysis
+
+## Age Group Analysis
+
+The 36–60 age group accounted for the highest number of appointments (37,761).
+
+Young adults (19–35) exhibited the highest no-show rate at 23.83%, while patients aged 60+ demonstrated the lowest no-show rate at 15.20%.
+
+## Gender Analysis
+
+Female patients accounted for the majority of appointments. However, the no-show rate difference between male and female patients was minimal, indicating gender is not a strong predictor of attendance behavior.
+
+## Scholarship Analysis
+
+Patients enrolled in scholarship programs exhibited a higher no-show rate (23.74%) compared to non-scholarship patients (19.81%).
+
+This suggests socioeconomic conditions may influence appointment adherence.
+
+## Geographic Analysis
+
+Jardim Camburi, Maria Ortiz, Itararé, Resistência, and Centro recorded the highest numbers of missed appointments.
+
+These neighborhoods may benefit from targeted healthcare engagement initiatives.
+
