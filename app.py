@@ -102,7 +102,25 @@ def home():
         prediction=result if request.method == "POST" else "",
         probability=probability if request.method == "POST" else ""
     )
+@app.route("/view_predictions")
+def view_predictions():
 
+    cursor.execute("""
+        SELECT id,
+               age,
+               prediction,
+               probability,
+               created_at
+        FROM prediction_logs
+        ORDER BY created_at DESC
+    """)
+
+    records = cursor.fetchall()
+
+    return render_template(
+        "history.html",
+        records=records
+    )
 if __name__ == "__main__":
     app.run(debug=True)
 
