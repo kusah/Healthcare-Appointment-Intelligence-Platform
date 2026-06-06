@@ -1,0 +1,84 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare Appointment Predictor</title>
+</head>
+<body>
+
+    <h1>Healthcare Appointment Predictor</h1>
+
+    <p>Flask application is running successfully!</p>
+
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare Appointment Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Healthcare Appointment Predictor</h1>
+    <div class="container">
+    <form method="POST">
+
+        <label>Age:</label>
+        <input type="number" name="age" required><br><br>
+
+        <label>Gender:</label>
+        <select name="gender">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select><br><br>
+
+        <label>Scholarship:</label>
+        <select name="scholarship">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label>Hypertension:</label>
+        <select name="hypertension">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label>Diabetes:</label>
+        <select name="diabetes">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label>Alcoholism:</label>
+        <select name="alcoholism">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <label>SMS Received:</label>
+        <select name="sms">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        <button type="submit">Predict</button>
+
+    </form>
+    <br><br>
+
+{% if prediction %}
+    {% if prediction == "Likely No-Show" %}
+        <h3 style="color:red;">
+            {{ prediction }} | No-Show Probability: {{ probability }}%
+        </h3>
+    {% else %}
+        <h3 style="color:green;">
+            {{ prediction }} | No-Show Probability: {{ probability }}%
+        </h3>
+    {% endif %}
+{% endif %}
+</div>
+</body>
+</html>
