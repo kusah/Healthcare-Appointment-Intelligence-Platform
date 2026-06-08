@@ -60,19 +60,20 @@ MySQL Prediction Logs
 
 ### Power BI Dashboard
 
-(Add screenshot here)
+![Dashboard](screenshots/dashboard_1.png)
+![Dashboard](screenshots/dashboard_2.png)
 
 ### Predictor Form
 
-(Add screenshot here)
+![Form](screenshots/Prediction_Form.png)
 
 ### Prediction Result
 
-(Add screenshot here)
+![Result](screenshots/Prediction_result.png)
 
 ### Prediction History
 
-(Add screenshot here)
+![History](screenshots/Prediction_History.png)
 
 ---
 
