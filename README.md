@@ -93,8 +93,6 @@ Dataset
 
 ### Power BI Dashboard
 ![Dashboard](screenshots/dashboard_1.png)
-
-
 ![Dashboard](screenshots/dashboard_2.png)
 
 
