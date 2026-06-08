@@ -93,14 +93,14 @@ Dataset
 
 ### Power BI Dashboard
 ![Dashboard](screenshots/dashboard_1.png)
-<img width="1312" height="735" alt="Dashboard_1" src="https://github.com/user-attachments/assets/03d9e09d-0e46-4037-94ca-261fcf763d8b" />
+
 
 ![Dashboard](screenshots/dashboard_2.png)
-<img width="1311" height="735" alt="Dashboard_2" src="https://github.com/user-attachments/assets/b926e4ea-2305-4b73-bcf4-f0ff59174d52" />
+
 
 
 ### Predictor Form
-![Form](screenshots/Prediction_Form.png)
+![Form](screenshots/Prediction_form.png)
 
 ### Prediction Result
 ![Result](screenshots/Prediction_result.png)
