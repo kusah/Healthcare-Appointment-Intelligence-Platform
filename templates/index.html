@@ -17,9 +17,10 @@
 <head>
     <title>Healthcare Appointment Predictor</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<a href="/view_predictions">Prediction History</a>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- <a href="/view_predictions">Prediction History</a> -->
 </head>
-<body>
+<!-- <body>
 
     <h1>Healthcare Appointment Predictor</h1>
     <div class="container">
@@ -81,5 +82,111 @@
     {% endif %}
 {% endif %}
 </div>
+</body> -->
+
+
+
+
+<body class="bg-light">
+
+<div class="container mt-5">
+    <!-- <p class="text-muted">
+Predict the likelihood of a patient missing a healthcare appointment using Machine Learning.
+</p> -->
+    <div class="text-center mb-4">
+        <h1 class="fw-bold">🏥 Healthcare Appointment Predictor</h1>
+
+        <a href="/view_predictions" class="btn btn-dark mt-3">
+            View Prediction History
+        </a>
+    </div>
+
+    <div class="card shadow p-4 mx-auto" style="max-width:700px;">
+        <form method="POST">
+
+        <div class="mb-3">
+            <label class="form-label">Age</label>
+        <input type="number" name="age" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Gender</label>
+            <select name="gender" class="form-control">
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Scholarship</label>
+            <select name="scholarship" class="form-control">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Hypertension</label>
+            <select name="hypertension" class="form-control">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Diabetes</label>
+            <select name="diabetes" class="form-control">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Alcoholism</label>
+            <select name="alcoholism" class="form-control">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">SMS Received</label>
+            <select name="sms" class="form-control">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div  >
+
+        <button type="submit" class="btn btn-primary btn-lg w-100">
+            Predict Appointment
+        </button>
+
+    </form>
+        <!-- Your Form Here -->
+    {% if prediction %}
+
+        <div class="alert
+            {% if prediction == 'Likely No-Show' %}
+            alert-danger
+            {% else %}
+            alert-success
+            {% endif %}
+            mt-4">
+
+    <h4>{{ prediction }}</h4>
+
+    <strong>
+        No-Show Probability:
+        {{ probability }}%
+    </strong>
+
+    </div>
+
+    {% endif %}
+
+    </div>
+
+</div>
+
 </body>
 </html>
